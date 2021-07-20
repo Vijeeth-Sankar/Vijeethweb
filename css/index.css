@@ -1,0 +1,1239 @@
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+body{
+    background-color: #230830;
+}
+
+header {
+  z-index: 1000;
+}
+
+#banner{
+  height: 90vh;
+  background:linear-gradient(to bottom, #0d0d377c, #041d6086), url("../photo/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+#navbar-top{
+  background: transparent;
+  padding: 2px 0;
+}
+
+.sticky{
+  background: #2b0422;
+
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  height: 60px;
+}
+
+
+
+
+
+.navbar-brand{
+  font-weight: 700;
+  font-size: 28px;
+  margin-left: 10%;
+}
+
+#my-item{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+}
+
+#my-link{
+  color: white;
+}
+
+
+section{
+  background-color: transparent;
+}
+
+
+section img{
+  margin-top:100px;
+  margin-left: 100px;
+  width: 300px;
+  border-radius: 50%;
+  height: auto;
+  animation: irm 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes irm {
+  100%{
+    box-shadow: 0 0 40px 20px rgb(255, 255, 255);
+    
+  }
+  0%{
+    box-shadow: 0 0 0px 0px rgb(255, 255, 255);
+    
+  }
+}
+
+
+
+#main #tex{
+  font-size: 22px;
+}
+
+#text{
+  text-align: center;
+  background-color: transparent;
+  font-size: 18px;
+  margin-top: -150px;
+  color: white;
+}
+
+
+.btn{
+  margin-top: 25px;
+  background-color:green;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px 10px ;
+}
+
+.btn a{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+#icon{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  position: absolute;
+  margin-top: 83vh;
+  height:100px;
+  background: transparent;
+  
+}
+
+
+
+#icon a{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: #242424;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration: none;
+  margin: 1em;
+  border-radius: 50%;
+  transition: all .2s;
+  animation: with 2s;
+}
+
+
+@keyframes with{
+  0%{
+    margin: 2em;
+  }
+  100%{
+    margin: 1em;
+  }
+}
+
+#icon a .bi{
+  font-size: 30px;
+}
+
+#icon a:hover::before{
+  transform: translate(10px) scale(0.6) scale(0.8);
+  filter: blur(10px)
+}
+
+#icon a:hover:nth-child(1){
+  background: #00acee;
+  color: white;
+  
+}
+
+#icon a:hover:nth-child(2){
+  color: white;
+  text-shadow: 0 0 30px #c32a33;
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+#icon a:hover:nth-child(3){
+  color: white;
+  background: black;
+}
+
+#icon a:hover:nth-child(4){
+  background: #0088cc;
+  color: white;
+}
+
+#icon a:hover:nth-child(5){
+  color: white;
+  background: #25d366;
+}
+
+#card-container .card1{
+  position: sticky;
+  background: #4E2020;
+  margin-top: 100px;
+  border-radius: 100px;
+  height: 500px;
+  z-index: 1;
+}
+
+#card-container .card1 #text{
+  position: absolute;
+  color: white;
+  background: transparent;
+  margin-top: 100px;
+  width: 600px;
+  height: 200px;
+  top: 80px;
+  
+}
+
+#card-container .card1 img{
+  background: transparent;
+  float: right;
+  width: 350px;
+  margin-top: 80px;
+}
+
+
+#card-container .card2{
+  position: relative;
+  background: #0E456A;
+  z-index: 1;
+  border-radius: 100px;
+  margin-top: 60px;
+  height: 500px;
+}
+
+#card-container .card2 #text{
+  margin-top: 50px;
+  float: left;
+  margin-left: 100px;
+}
+
+#card-container .card2 img{
+  height: 350px;
+  width: auto;
+  margin-top: 60px;
+  float: right;
+  margin-right: 100px;
+}
+
+#card-container .card2 h2{
+  padding: 25px;
+}
+
+#card-container .card2 i{
+  color: black;
+  font-size: 26px
+}
+
+#card-container .card2 ul li{
+  display: flex;
+  padding: 10px;
+}
+
+#card-container .card2 ul li i{
+  margin-right: 20px;
+}
+
+#Qualification{
+  text-align: center;
+  margin-top:100px;
+  color: white;
+}
+
+#Qpage{
+  margin-top: 30px;
+  background: #440505;
+  color: white;
+  border-radius: 40px;
+  display: flex;
+}
+
+#Qualification #fill{
+  background-color: #707070;
+  color: #707070; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+#Qualification #fill p{
+  display: none;
+}
+
+#project{
+  position: relative;
+  margin-top: 10vh;
+  display: flex;
+  background-color:transparent;
+}
+
+#project #flu{ 
+  position: absolute;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  margin-left: 20px;
+  background: transparent;
+  height: 10vh;
+}
+
+#project #netflix{
+  margin-top: 20vh;
+  position: relative;
+  width: 350px;
+  height: auto;
+  margin-left: 0;
+  overflow:hidden;
+}
+
+#project #netflix #image {
+  width: 350px;
+  height: auto;
+}
+
+#project #netflix #overlay {
+  position: absolute;
+  bottom: 0;
+  margin-left: 12.5px;
+  left: 350px;
+  right: 0;
+  background-color: #000000;
+  overflow: hidden;
+  width: 0;
+  height: 87%;
+  transition: .5s ease;
+}
+
+#project #netflix:hover #overlay {
+  width: 350px;
+  left: 0;
+}
+
+#project #netflix #png {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#project #netflix #nname{
+  color: white;
+  display:flex;
+  justify-content:center;
+  text-decoration: none;
+  width: 350px;
+  background: black;
+}
+
+#project #netflix #nname h5{
+  text-decoration: none;
+}
+
+
+#project #spotify{
+  position: relative;
+  width: 350px;
+  height: auto;
+  margin-top:20vh;
+  margin-right: 0;
+  overflow:hidden;
+}
+
+#project #spotify #image {
+  width: 350px;
+  height: auto;
+}
+
+#project #spotify #overlay {
+  position: absolute;
+  margin-left: 12px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  overflow: hidden;
+  width: 0;
+  height: 86%;
+  transition: .5s ease;
+}
+
+#project #spotify:hover #overlay {
+  width: 350px;
+}
+
+#project #spotify #nname{
+  color: white;
+  display:flex;
+  justify-content:center;
+  text-decoration: none;
+  width: 350px;
+  background: black;
+}
+
+#project #spotify #nname h5{
+  text-decoration: none;
+}
+
+#project #spotify #png {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#workspace{
+  margin-top: 15vh;
+}
+
+#workspace h3{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: white;
+}
+
+#workspace #workspace-box{
+  position: relative;
+  margin-top: 5vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  overflow: hidden;
+}
+
+#workspace #workspace-box li{
+  padding: 10px;
+}
+
+#workspace #workspace-box img{
+  position: absolute;
+  height: 250px;
+  width: auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  top: 30px;
+  right: 50px;
+}
+
+#contact{
+  position: relative;
+  margin-top: 15vh;
+  height: 90vh;
+  background: url("../photo/contack.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact #contact-info{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.644);
+  width: 900px;
+  height: 400px;
+  top: 80px;
+  color: white;
+}
+
+#contact #contact-info h4{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+#contact #contact-info ul{
+  list-style: none;
+  margin-top: 10vh;
+}
+
+#contact #contact-info ul i{
+  font-size: 25px;
+  padding: 25px;
+}
+
+#contact #contact-info #cbtn{
+  background-color: #25d366;
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#contact #contact-info a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#contact #contact-info #ficon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+#contact #contact-info #ficon i{
+  padding: 10px;
+  font-size: 20px;
+  color: blue;
+}
+
+#contact #contact-info #ficon:hover i{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media Query*/
+
+
+
+/*Phones*/
+
+@media screen and (max-width: 991px) {
+
+    #navbarNav{
+        position: fixed;
+        background: linear-gradient(to bottom, #2b0422, #0E456A);
+        width: 250px;
+        
+    }
+
+    header {
+      z-index: 1000;
+    }
+
+    .nav-item{
+        margin-top: 30px;
+        margin-left: 15px;
+        font-size: 26px;
+    }
+
+      label{
+        display:flex;
+         flex-direction:column;
+         width:25px;
+         cursor:pointer;
+       }
+       
+       label span{
+         background: #fff;
+         border-radius:10px;
+         height:2px;
+         margin: 4px 0;
+         transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+       
+       }
+       
+       
+       span:nth-of-type(1){
+         width:40%;
+         
+       }
+       
+       span:nth-of-type(2){
+         width:90%;
+       }
+       
+       
+       span:nth-of-type(3){
+         width:65%;
+        
+       }
+       
+       
+       input[type="checkbox"]{
+         display:none;
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(1){
+         transform-origin:bottom;
+         transform:rotatez(45deg) translate(6px,0px)
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(2){
+         
+         transform-origin:top;
+         transform:rotatez(-45deg)
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(3){
+         
+         transform-origin:bottom;
+         width:50%;
+         transform: translate(10px,-8px) rotatez(45deg);
+       
+       }
+
+       #banner{
+         overflow:hidden;
+       }
+
+       section .container{
+        
+        background-color: transparent;
+      }
+      
+      #main img{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        float: none;
+        width: auto;
+        height: 250px;
+        
+      }
+
+      #text{
+        text-align: center;
+        background-color: transparent;
+        margin-top: 50px;
+        color: white;
+        width: auto
+      }
+
+      .container-xl{
+        margin-top: 25px;
+        background-color:green;
+        width: 100px;
+        align-items: center;
+        border-radius: 50px 10px ;
+      }
+
+      #resu{
+        color: white;
+        text-decoration: none;
+        
+      }
+
+      #icon{
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: auto;
+        overflow: scroll;
+      }
+
+      #icon a{
+        padding: 20px;
+      }
+
+      #icon a:nth-child(1){
+        background: #00acee;
+        color: white;
+      }
+      
+      #icon a:nth-child(2){
+        color: white;
+        text-shadow: 0 0 30px #c32a33;
+        background: #f09433; 
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+      }
+      
+      #icon a:nth-child(3){
+        color: white;
+        background: black;
+      }
+      
+      #icon a:nth-child(4){
+        background: #0088cc;
+        color: white;
+      }
+      
+      #icon a:nth-child(5){
+        
+        color: white;
+        background: #25d366;
+      }
+
+      #card-container .card1{
+        position: sticky;
+        background: #4E2020;
+        margin-top: 100px;
+        border-radius: 10%;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      
+      #card-container .card1 #text{
+        position: absolute;
+        color: white;
+        background: transparent;
+        margin-left: 15px;
+        margin-top: 220px;
+        height: 300px;
+        width: auto;
+        display: inline;
+      }
+
+      
+      
+      #card-container .card1 img{
+        background: transparent;
+        position: absolute;
+        margin-left: 10px;
+        height: 250px;
+        width: auto;
+        margin-top:2px;
+      }
+
+      #card-container .card2{
+        position: relative;
+        background: #0E456A;
+        z-index: 1;
+        border-radius: 10%;
+        margin-top: 50px;
+        height: 500px;
+        overflow: hidden;
+      }
+      
+      #card-container .card2 #text{
+        margin-top: 10px;
+        float: none;
+        margin-left: 30px;
+      }
+      
+      #card-container .card2 img{
+        display: none;
+      }
+
+      #card-container .card2 .bi{
+        font-size: 30px;
+        color: black;
+      }
+      
+      #card-container .card2 h2{
+        padding: 25px;
+      }
+      
+      #card-container .card2 ul li{
+        display: flex;
+        padding: 10px;
+        height: 70px;
+        width: auto;
+      }
+      
+      #card-container .card2 ul li i{
+        margin-right: 20px;
+      }
+
+      #Qualification{
+        text-align: center;
+        margin-top:50px;
+        color: white;
+      }
+      
+      #Qpage{
+        margin-top: 30px;
+        background: transparent;
+        color: white;
+        border: 2px solid #707070;
+        display: inline-block;
+        padding: 10px;
+      }
+      
+      #Qualification #fill{
+        background-color: #707070;
+        color: #707070; 
+        height: 1px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+      }
+      
+      #Qualification #fill p{
+        display: none;
+      }
+
+      #project{
+        position: relative;
+        margin-top: 10vh;
+        display: inline-block;
+        background-color:transparent;
+      }
+      
+      #project #flu{ 
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        color: white;
+        margin-left: 20px;
+        background: transparent;
+        height: 10vh;
+      }
+      
+      #project #netflix{
+        margin-top: 10vh;
+        position: relative;
+        width: 250px;
+        height: auto;
+        margin-left: 0;
+        overflow:hidden;
+      }
+      
+      #project #netflix #image {
+        width: 250px;
+        height: auto;
+      }
+      
+      #project #netflix #overlay {
+        position: absolute;
+        bottom: 0;
+        margin-left: 12.5px;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        overflow: hidden;
+        width: 250px;
+        height: 82%;
+        transition: .5s ease;
+      }
+      
+      #project #netflix #png {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: auto;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      #project #netflix #nname{
+        color: white;
+        display:flex;
+        justify-content:center;
+        text-decoration: none;
+        width: 250px;
+        background: black;
+      }
+      
+      #project #netflix #nname h5{
+        text-decoration: none;
+      }
+      
+      
+      #project #spotify{
+        position: relative;
+        width: 250px;
+        height: auto;
+        margin-top:5vh;
+        margin-right: 20px;
+        justify-content:center;
+        align-items:center;
+        float:none;
+        overflow:hidden;
+      }
+      
+      #project #spotify #image {
+        width: 250px;
+        height: auto;
+      }
+      
+      #project #spotify #overlay {
+        position: absolute;
+        margin-left: 12px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        overflow: hidden;
+        width: 250px;
+        height: 82%;
+        transition: .5s ease;
+      }
+      
+      #project #spotify #nname{
+        color: white;
+        display:flex;
+        justify-content:center;
+        text-decoration: none;
+        width: 250px;
+        background: black;
+      }
+      
+      #project #spotify #nname h5{
+        text-decoration: none;
+      }
+      
+      #project #spotify #png {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: auto;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+#workspace{
+  margin-top: 15vh;
+}
+
+#workspace h3{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: white;
+}
+
+#workspace #workspace-box{
+  margin-top: 5vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+}
+
+#workspace #workspace-box li{
+  padding: 10px;
+}
+
+#workspace #workspace-box img{
+  display: none;
+}
+
+#contact{
+  position: relative;
+  margin-top: 15vh;
+  height: 60vh;
+  background: url("../photo/contack.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact #contact-info{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.644);
+  width: auto;
+  height: 400px;
+  top: 80px;
+  color: white;
+}
+
+#contact #contact-info h4{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+#contact #contact-info ul{
+  list-style: none;
+  margin-top: 5vh;
+  display: inline;
+  float: none;
+}
+
+#contact #contact-info ul li{
+  padding-left: 4em;
+  text-indent: -3em;
+}
+
+
+#contact #contact-info ul i{
+  font-size: 25px;
+  padding: 25px;
+}
+
+#contact #contact-info #cbtn{
+  background-color: #25d366;
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#contact #contact-info a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+      
+#contact #contact-info ul li{
+  padding-left: 4em;
+  text-indent: -3em;
+}
+      
+    
+
+       
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width:400px){
+  #icon{
+    background: transparent;
+    justify-content: left;
+    align-items: left;
+    height: 100px;
+    width: auto;
+    overflow: scroll;
+  }
+
+}
+
+@media screen and (max-width:278px){
+  #project{
+    position: relative;
+    margin-top: 10vh;
+    display: inline-block;
+    background-color:transparent;
+  }
+  
+  #project #flu{ 
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    margin-left: 20px;
+    background: transparent;
+    height: 10vh;
+  }
+  
+  #project #netflix{
+    margin-top: 10vh;
+    position: relative;
+    width: 150px;
+    height: auto;
+    margin-left: 0;
+    overflow:hidden;
+  }
+  
+  #project #netflix #image {
+    width: 150px;
+    height: auto;
+  }
+  
+  #project #netflix #overlay {
+    position: absolute;
+    bottom: 0;
+    margin-left: 12.5px;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    width: 150px;
+    height: 75%;
+    transition: .5s ease;
+  }
+  
+  #project #netflix #png {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #project #netflix #nname{
+    color: white;
+    display:flex;
+    justify-content:center;
+    text-decoration: none;
+    width: 150px;
+    background: black;
+  }
+  
+  #project #netflix #nname h5{
+    text-decoration: none;
+  }
+  
+  
+  #project #spotify{
+    position: relative;
+    width: 150px;
+    height: auto;
+    margin-top:5vh;
+    margin-right: 20px;
+    justify-content:center;
+    align-items:center;
+    float:none;
+    overflow:hidden;
+  }
+  
+  #project #spotify #image {
+    width: 150px;
+    height: auto;
+  }
+  
+  #project #spotify #overlay {
+    position: absolute;
+    margin-left: 12px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    width: 150px;
+    height: 75%;
+    transition: .5s ease;
+  }
+  
+  #project #spotify #nname{
+    color: white;
+    display:flex;
+    justify-content:center;
+    text-decoration: none;
+    width: 150px;
+    background: black;
+  }
+  
+  #project #spotify #nname h5{
+    text-decoration: none;
+  }
+  
+  #project #spotify #png {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/*Phones*/
+
+
+
+
+
+/*mydevices*/
+/*mydevices*/
+/*mydevices*/
+/*mydevices*/
+/*mydevices*/
+/*mydevices*/
+/*mydevices*/
+/*mydevices*/
+/*mydevices*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+
+
+
+
+
+
+
+/*Tablet*/
